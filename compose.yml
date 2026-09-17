@@ -1,0 +1,7 @@
+services:
+  site:
+    image: ${SITE_IMAGE}
+    container_name: portainer-github-test
+    restart: unless-stopped
+    ports:
+      - "8090:80"
